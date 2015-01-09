@@ -1353,7 +1353,17 @@
     // good
     var $sidebar = $('.sidebar');
     ```
+    
+  - Use class names prefixed with js- for selectors used only for JavaScript purposes.
 
+    ```javascript
+    // bad
+    $('.map-hide').on('click', function () {...});
+
+    // good
+    $('.js-map-hide').on('click', function () {...});
+    ```
+    
   - Cache jQuery lookups.
 
     ```javascript
